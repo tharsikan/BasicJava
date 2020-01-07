@@ -1,0 +1,20 @@
+C:\Users\Tharsikan\Desktop\Exercise\Tharsi\hello\B>javac -d C:\Users\Tharsikan\Desktop\Exercise\Tharsi\hello\C Course.java
+create ...\Course.class in B
+
+C:\Users\Tharsikan\Desktop\Exercise\Tharsi\hello\C>javac -d C:\Users\Tharsikan\Desktop\Exercise\Tharsi\hello\A Student.java
+create ...\Student.class in A
+
+				C:\Users\Tharsikan\Desktop\Exercise\Tharsi\hello\A>javac -d C:\Users\Tharsikan\Desktop\Exercise\Tharsi\hello\A Application.java
+				create ...\Application.class in A
+
+				java hello.A.Application
+				Exception in thread "main" java.lang.NoClassDefFoundError: hello/B/Course
+				
+C:\Users\Tharsikan\Desktop\Exercise\Tharsi\hello\B>javac -d C:\Users\Tharsikan\Desktop\Exercise\Tharsi\hello\A Course.java
+create ...\Course.class in A
+
+C:\Users\Tharsikan\Desktop\Exercise\Tharsi\hello\A>javac -d C:\Users\Tharsikan\Desktop\Exercise\Tharsi\hello\A Application.java
+create ...\Application.class in A
+
+java hello.A.Application
+hello course
