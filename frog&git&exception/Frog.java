@@ -1,3 +1,5 @@
+import java.util.Scanner;
+import java.util.InputMismatchException;
 public class Frog{
     public static int calculateTime(int distance){
         int t = 0;
@@ -24,7 +26,24 @@ public class Frog{
         return d;
     }
     public static void main(String[] args) {
-        System.out.println(calculateTime(29)); 
-        System.out.println(calculateDistance(3));
+        Scanner sc = new Scanner(System.in);
+        System.out.println("please enter Distance : ");
+        try {
+            int distance = sc.nextInt();
+            System.out.println("taken time is "+calculateTime(distance));
+            System.out.println("please enter Time : ");
+            int time = sc.nextInt();
+            System.out.println("maximum distance is "+calculateDistance(time));
+            sc.close();
+        }
+           
+        catch (InputMismatchException e ) {
+            System.out.println("please enter number ");
+            throw e;
+        } 
+        catch (Exception e) {
+            System.out.println("please enter number ");
+            throw e;
+        } 
     }
 }
